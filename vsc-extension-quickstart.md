@@ -1,23 +1,64 @@
-# Welcome to your VS Code Extension
+# How to Use the Quick Snippet for JavaScript Extension
 
-## What's in the folder
+This document provides step-by-step instructions on installing and using the **Multi-Language Snippet Extension** in Visual Studio Code. If you’re looking for an **overview of the available snippets** (prefixes, expansions, etc.), see the main [README.md](./README.md).
 
-* This folder contains all of the files necessary for your extension.
-* `package.json` - this is the manifest file that defines the location of the snippet file and specifies the language of the snippets.
-* `snippets/snippets.code-snippets` - the file containing all snippets.
+---
 
-## Get up and running straight away
+## 1. Prerequisites
 
-* Press `F5` to open a new window with your extension loaded.
-* Create a new file with a file name suffix matching your language.
-* Verify that your snippets are proposed on IntelliSense.
+- **Visual Studio Code** installed (version 1.80.0 or higher recommended).
+- **Node.js** (only if you plan to modify and republish the extension; not required for basic usage).
+- Optional: A **TypeScript** setup if you want to fully leverage TS-based snippets (interfaces, types, etc.).
 
-## Make changes
+---
 
-* You can relaunch the extension from the debug toolbar after making changes to the files listed above.
-* You can also reload (`Ctrl+R` or `Cmd+R` on Mac) the VS Code window with your extension to load your changes.
+## 2. Installation
 
-## Install your extension
+### 2.1. From the VS Code Marketplace
 
-* To start using your extension with Visual Studio Code copy it into the `<user home>/.vscode/extensions` folder and restart Code.
-* To share your extension with the world, read on https://code.visualstudio.com/docs about publishing an extension.
+1. Open **VS Code**.
+2. Go to the **Extensions** panel (click the square icon in the left sidebar or press `Ctrl+Shift+X` / `Cmd+Shift+X`).
+3. In the search box, type **"Quick Snippet for JavaScript"**.
+4. Click **Install**.
+5. Once installed, **Reload** or restart VS Code (if prompted).
+
+### 2.2. From a VSIX File (Offline)
+
+1. Obtain the `.vsix` file from the extension’s [Releases](#) page or another source.
+2. Open **VS Code**.
+3. Go to the **Extensions** panel.
+4. Click the **ellipsis** (`...`) in the top-right corner → **Install from VSIX...**.
+5. Select the downloaded `.vsix` file.
+6. **Reload** or restart VS Code if prompted.
+
+---
+
+## 3. Verifying Your Installation
+
+1. After installation, open VS Code.
+2. In the **Extensions** panel, type the name of the extension in the search bar.
+3. Confirm that it’s **enabled** and **up to date**.
+4. If everything looks good, you’re ready to start using the snippets!
+
+---
+
+## 4. Basic Usage
+
+1. **Open a file** in your desired language:
+   - `.js` for JavaScript
+   - `.ts` for TypeScript
+   - `.jsx` / `.tsx` for React
+   - `.vue` for Vue 3 Composition API
+2. **Start typing** a snippet prefix (e.g., `cl`, `iface`, `rfc`, `vue-sfc`, etc.).
+3. Watch as **IntelliSense** suggests the snippet in the autocomplete dropdown.
+4. **Press `Tab` or `Enter`** to expand the snippet.
+5. **Fill in placeholders** (like `$1`, `$2`) by typing your desired text, then press `Tab` to jump to the next placeholder.
+
+### Example
+
+- Open a `.js` file.
+- Type `cl` and press `Tab`.
+- It expands to:
+  ```js
+  console.log("");
+  ```
