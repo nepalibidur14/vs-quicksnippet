@@ -1,0 +1,136 @@
+{
+  "React Functional Component (JS)": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "const $1 = () => {",
+      "  return (",
+      "    <div>$0</div>",
+      "  );",
+      "};",
+      "",
+      "export default $1;"
+    ],
+    "description": "Create a basic React functional component (JS)"
+  },
+  "React Functional Component (TS)": {
+    "prefix": "rfc-ts",
+    "body": [
+      "import React from 'react';",
+      "",
+      "interface $1Props {",
+      "  // define props here",
+      "}",
+      "",
+      "const $1: React.FC<$1Props> = (props) => {",
+      "  return (",
+      "    <div>$0</div>",
+      "  );",
+      "};",
+      "",
+      "export default $1;"
+    ],
+    "description": "Create a React functional component with TypeScript interface"
+  },
+  "useState Hook": {
+    "prefix": "usest",
+    "body": ["const [$1, set$1] = React.useState($2);", "$0"],
+    "description": "Declare a state variable with useState hook"
+  },
+  "useEffect Hook": {
+    "prefix": "useeff",
+    "body": ["React.useEffect(() => {", "  $0", "}, [${1:dependency}]);"],
+    "description": "useEffect with a dependency array"
+  },
+  "useContext Hook": {
+    "prefix": "usectx",
+    "body": ["const $1 = React.useContext($2);", "$0"],
+    "description": "Consume a React context"
+  },
+  "Create Context": {
+    "prefix": "ctx-create",
+    "body": [
+      "const $1Context = React.createContext<$2>($3);",
+      "",
+      "export function $1Provider({ children }: { children: React.ReactNode }) {",
+      "  return (",
+      "    <${1}Context.Provider value={$4}>",
+      "      {children}",
+      "    </${1}Context.Provider>",
+      "  );",
+      "}",
+      "",
+      "export default $1Context;"
+    ],
+    "description": "Create a context and provider (TS-based usage)"
+  },
+  "React Router (BrowserRouter)": {
+    "prefix": "rroute",
+    "body": [
+      "import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';",
+      "import React from 'react';",
+      "",
+      "function App() {",
+      "  return (",
+      "    <Router>",
+      "      <Routes>",
+      "        <Route path='/' element={<Home />} />",
+      "        <Route path='/about' element={<About />} />",
+      "        $0",
+      "      </Routes>",
+      "    </Router>",
+      "  );",
+      "}",
+      "",
+      "export default App;"
+    ],
+    "description": "Skeleton for React Router with Routes (v6+)"
+  },
+  "Custom Hook": {
+    "prefix": "rchook",
+    "body": [
+      "import React from 'react';",
+      "",
+      "export function use$1() {",
+      "  const [state, setState] = React.useState(null);",
+      "",
+      "  React.useEffect(() => {",
+      "    // side effect",
+      "  }, []);",
+      "",
+      "  return { state, setState };",
+      "}"
+    ],
+    "description": "Scaffold for creating a custom React hook"
+  },
+  "Memoized Component": {
+    "prefix": "rmemo",
+    "body": [
+      "import React from 'react';",
+      "",
+      "const $1 = React.memo(() => {",
+      "  return (",
+      "    <div>$0</div>",
+      "  );",
+      "});",
+      "",
+      "export default $1;"
+    ],
+    "description": "Use React.memo to memoize a functional component"
+  },
+  "useReducer Hook": {
+    "prefix": "usered",
+    "body": [
+      "const [$1, $2] = React.useReducer((state, action) => {",
+      "  switch (action.type) {",
+      "    case '$3':",
+      "      return { ...state, $0 };",
+      "    default:",
+      "      return state;",
+      "  }",
+      "}, {});"
+    ],
+    "description": "Initialize a React useReducer hook"
+  }
+}

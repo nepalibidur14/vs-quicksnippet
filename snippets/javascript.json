@@ -1,0 +1,79 @@
+{
+  "Console Log": {
+    "prefix": "cl",
+    "body": ["console.log('$1');"],
+    "description": "Insert a console.log statement (JS)"
+  },
+  "Console Log Multiple": {
+    "prefix": "clm",
+    "body": ["console.log('$1:', $1, '$2:', $2);"],
+    "description": "Log multiple variables at once"
+  },
+  "Arrow Function": {
+    "prefix": "afn",
+    "body": ["const $1 = ($2) => {", "  $0", "}"],
+    "description": "Create an arrow function"
+  },
+  "Async Arrow Function": {
+    "prefix": "afna",
+    "body": [
+      "const $1 = async ($2) => {",
+      "  try {",
+      "    $0",
+      "  } catch (err) {",
+      "    console.error(err);",
+      "  }",
+      "}"
+    ],
+    "description": "Create an async arrow function with try/catch"
+  },
+  "For Loop": {
+    "prefix": "forloop",
+    "body": [
+      "for (let i = 0; i < $1.length; i++) {",
+      "  const item = $1[i];",
+      "  $0",
+      "}"
+    ],
+    "description": "Classic for loop over an array"
+  },
+  "For...Of Loop": {
+    "prefix": "forof",
+    "body": ["for (const $1 of $2) {", "  $0", "}"],
+    "description": "Iterate through an iterable (ES6+)"
+  },
+  "IIFE (Immediately Invoked Function)": {
+    "prefix": "iife",
+    "body": ["(function() {", "  $0", "})();"],
+    "description": "Immediately Invoked Function Expression"
+  },
+  "Fetch API (GET)": {
+    "prefix": "fetchget",
+    "body": [
+      "fetch('$1')",
+      "  .then(res => res.json())",
+      "  .then(data => {",
+      "    console.log(data);",
+      "    $0",
+      "  })",
+      "  .catch(err => console.error(err));"
+    ],
+    "description": "Fetch GET request with basic logging"
+  },
+  "Try/Catch Block": {
+    "prefix": "tryc",
+    "body": [
+      "try {",
+      "  $0",
+      "} catch (error) {",
+      "  console.error(error);",
+      "}"
+    ],
+    "description": "Standard try/catch block"
+  },
+  "Set Timeout": {
+    "prefix": "sto",
+    "body": ["setTimeout(() => {", "  $0", "}, ${1:1000});"],
+    "description": "Wrap code in a setTimeout callback"
+  }
+}

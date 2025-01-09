@@ -1,0 +1,121 @@
+{
+  "Vue SFC (Composition API)": {
+    "prefix": "vue-sfc",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "// import { ref, computed, onMounted } from 'vue';",
+      "// Optional: defineProps() or defineEmits() calls below if needed",
+      "</script>",
+      "<template>",
+      "  <div>$0</div>",
+      "</template>",
+      "",
+      "<style scoped>",
+      "</style>"
+    ],
+    "description": "Boilerplate for a Vue 3 Single File Component using <script setup>. Remove 'lang=\"ts\"' if not using TypeScript."
+  },
+
+  "Define Props (Composition API)": {
+    "prefix": "vdefineprops",
+    "body": [
+      "interface ${1:Props} {",
+      "  $2: string;",
+      "}",
+      "",
+      "const props = defineProps<${1:Props}>();",
+      "$0"
+    ],
+    "description": "Define typed props in <script setup> for Composition API. Omit interface if not using TS."
+  },
+
+  "Define Emits (Composition API)": {
+    "prefix": "vdefineemits",
+    "body": [
+      "interface ${1:Emits} {",
+      "  (event: '${2:custom-event}', payload: ${3:string | number}): void",
+      "}",
+      "",
+      "const emit = defineEmits<${1:Emits}>();",
+      "$0"
+    ],
+    "description": "Define typed emits in <script setup> for Composition API. Omit interface if not using TS."
+  },
+
+  "Define Expose (Composition API)": {
+    "prefix": "vdefineexpose",
+    "body": ["defineExpose({", "  $1: $2,", "});", "$0"],
+    "description": "Expose component internals (e.g. methods) to the parent using <script setup>."
+  },
+
+  "ref (Composition API)": {
+    "prefix": "vref",
+    "body": [
+      "import { ref } from 'vue';",
+      "",
+      "const ${1:variable} = ref(${2:null});",
+      "$0"
+    ],
+    "description": "Create a reactive reference using ref()."
+  },
+
+  "computed (Composition API)": {
+    "prefix": "vcomputed",
+    "body": [
+      "import { computed } from 'vue';",
+      "",
+      "const ${1:myComputed} = computed(() => {",
+      "  $0",
+      "});"
+    ],
+    "description": "Create a computed property using the Composition API."
+  },
+
+  "watch (Composition API)": {
+    "prefix": "vwatch",
+    "body": [
+      "import { watch } from 'vue';",
+      "",
+      "watch(() => ${1:source}, (newVal, oldVal) => {",
+      "  $0",
+      "});"
+    ],
+    "description": "Watch a reactive source and respond to changes."
+  },
+
+  "watchEffect (Composition API)": {
+    "prefix": "vwatcheffect",
+    "body": [
+      "import { watchEffect } from 'vue';",
+      "",
+      "watchEffect(() => {",
+      "  $0",
+      "});"
+    ],
+    "description": "Track reactive dependencies automatically with watchEffect."
+  },
+
+  "onMounted (Composition API)": {
+    "prefix": "vonmounted",
+    "body": [
+      "import { onMounted } from 'vue';",
+      "",
+      "onMounted(() => {",
+      "  $0",
+      "});"
+    ],
+    "description": "Lifecycle hook that runs after the component is mounted."
+  },
+
+  "onUnmounted (Composition API)": {
+    "prefix": "vonunmounted",
+    "body": [
+      "import { onUnmounted } from 'vue';",
+      "",
+      "onUnmounted(() => {",
+      "  $0",
+      "});"
+    ],
+    "description": "Lifecycle hook that runs when the component is unmounted."
+  }
+}
