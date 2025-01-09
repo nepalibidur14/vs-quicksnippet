@@ -161,7 +161,7 @@ Licensed under the [MIT License](LICENSE.md). Feel free to reuse or modify this 
 - **Bugs or feature requests?**  
   [Open an issue](https://github.com/nepalibidur14/vs-quicksnippet/issues).
 - **Enjoying it?**  
-  Please leave a [rating or review](https://marketplace.visualstudio.com/items?itemName=YAKAZAKI.quick-snip-js&ssr=false#review-details) in the VS Code Marketplace!
+  Please leave a <a href="https://marketplace.visualstudio.com/items?itemName=YAKAZAKI.quick-snip-js&ssr=false#review-details" target="_blank" rel="noopener noreferrer">rating or review</a> in the VS Code Marketplace!
 
 ---
 
