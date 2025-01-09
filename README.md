@@ -34,6 +34,7 @@ This extension aims to help developers quickly scaffold boilerplate code in a co
    - Open **Extensions** in VS Code (Ctrl+Shift+X or Cmd+Shift+X).
    - Search for "**Quick Snippet for JavaScript**".
    - Click **Install**.
+     OR goto [Marketplace](https://marketplace.visualstudio.com/items?itemName=YAKAZAKI.quick-snip-js) to install
 
 2. **From `.vsix` file (Offline)**
    - Download the `.vsix` file (from [Releases](#) or a direct link).
@@ -141,7 +142,7 @@ Below are some of the most frequently used prefixes for each language/framework,
 
 ## Contributing
 
-1. **Fork** this repository (if it’s on GitHub).
+1. **Fork** the ([Repository](https://github.com/nepalibidur14/vs-quicksnippet)).
 2. **Add or edit snippets** in their respective JSON files.
 3. **Submit a pull request** with your changes.
 
@@ -158,9 +159,9 @@ Licensed under the [MIT License](LICENSE.md). Feel free to reuse or modify this 
 ## Feedback & Support
 
 - **Bugs or feature requests?**  
-  [Open an issue](#) (link to your repository or issue tracker).
+  [Open an issue](https://github.com/nepalibidur14/vs-quicksnippet/issues).
 - **Enjoying it?**  
-  Please leave a [rating or review](#) in the VS Code Marketplace!
+  Please leave a [rating or review](https://marketplace.visualstudio.com/items?itemName=YAKAZAKI.quick-snip-js&ssr=false#review-details) in the VS Code Marketplace!
 
 ---
 
