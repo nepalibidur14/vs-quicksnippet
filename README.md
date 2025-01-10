@@ -1,4 +1,4 @@
-# Quick Snippet for JavaScript Extension
+# Quick Snippets for JavaScript, React, TypeScript, and Vue Extension
 
 A convenient Visual Studio Code extension providing a curated set of **snippets** for:
 
@@ -32,7 +32,7 @@ This extension aims to help developers quickly scaffold boilerplate code in a co
 1. **From VS Code Marketplace (Recommended)**
 
    - Open **Extensions** in VS Code (Ctrl+Shift+X or Cmd+Shift+X).
-   - Search for "**Quick Snippet for JavaScript**".
+   - Search for "**Quick Snippets for JavaScript, React, TypeScript, and Vue**".
    - Click **Install**.
      OR goto [Marketplace](https://marketplace.visualstudio.com/items?itemName=YAKAZAKI.quick-snip-js) to install
 
@@ -55,6 +55,14 @@ This extension aims to help developers quickly scaffold boilerplate code in a co
 2. **Type one of the snippet prefixes** (e.g. `cl`, `iface`, `rfc`, `vue-sfc`, etc.).
 3. **Press `Tab`** (or `Enter`) to expand the snippet.
 4. **Tab through placeholders** to quickly fill in variable names, function parameters, or other details.
+
+---
+
+## Example
+
+Here’s a quick demo of how the **Quick Snippets for JavaScript, React, TypeScript, and Vue** extension works:
+
+![Quick Snippets Demo](assets/example.gif)
 
 ---
 
