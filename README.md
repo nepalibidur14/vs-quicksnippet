@@ -165,4 +165,6 @@ Licensed under the [MIT License](LICENSE.md). Feel free to reuse or modify this 
 
 ---
 
+### If you enjoy using Quick Snippets, please consider [leaving a review](https://marketplace.visualstudio.com/items?itemName=YAKAZAKI.quick-snip-js)!
+
 ### Happy Coding with JavaScript, TypeScript, React, and Vue 3 Composition API!

@@ -1,7 +1,7 @@
 {
   "name": "quick-snip-js",
-  "displayName": "Quick Snippet for JavaScript",
-  "description": "It helps developer to write code faster by using quick snippets.",
+  "displayName": "Quick Snippets for JavaScript, React, TypeScript, and Vue",
+  "description": "A powerful JavaScript snippets extension to boost developer productivity. Quickly insert JavaScript, React, TypeScript, and Vue snippets into your code!",
   "version": "0.5.0",
   "publisher": "YAKAZAKI",
   "license": "MIT",
@@ -39,5 +39,17 @@
         "path": "./snippets/vue.json"
       }
     ]
-  }
+  },
+  "keywords": [
+    "javascript",
+    "snippets",
+    "quick snippets",
+    "code snippets",
+    "productivity",
+    "js",
+    "react",
+    "typescript",
+    "vue",
+    "developer tools"
+  ]
 }
