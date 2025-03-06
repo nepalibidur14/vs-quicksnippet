@@ -1,0 +1,107 @@
+{
+  "Console Log": {
+    "prefix": "cl",
+    "body": ["console.log($1);"],
+    "description": "Insert a console.log statement",
+    "scope": "javascript,typescript,vue"
+  },
+  "Console Log Multiple": {
+    "prefix": "clm",
+    "body": ["console.log('$1:', $1, '$2:', $2);"],
+    "description": "Log multiple variables at once",
+    "scope": "javascript,typescript,vue"
+  },
+  "Arrow Function": {
+    "prefix": "afn",
+    "body": ["const $1 = ($2) => {", "  $0", "};"],
+    "description": "Create an arrow function",
+    "scope": "javascript,typescript,vue"
+  },
+  "Async Arrow Function": {
+    "prefix": "afna",
+    "body": [
+      "const $1 = async ($2) => {",
+      "  try {",
+      "    $0",
+      "  } catch (err) {",
+      "    console.error(err);",
+      "  }",
+      "};"
+    ],
+    "description": "Create an async arrow function with try/catch",
+    "scope": "javascript,typescript"
+  },
+  "For Loop": {
+    "prefix": "forloop",
+    "body": [
+      "for (let i = 0; i < $1.length; i++) {",
+      "  const item = $1[i];",
+      "  $0",
+      "}"
+    ],
+    "description": "Classic for loop",
+    "scope": "javascript,typescript,vue"
+  },
+  "For...Of Loop": {
+    "prefix": "forof",
+    "body": ["for (const $1 of $2) {", "  $0", "}"],
+    "description": "Iterate through an iterable (ES6+)",
+    "scope": "javascript,typescript"
+  },
+  "Fetch API (GET)": {
+    "prefix": "fetchget",
+    "body": [
+      "fetch('$1')",
+      "  .then(res => res.json())",
+      "  .then(data => {",
+      "    console.log(data);",
+      "    $0",
+      "  })",
+      "  .catch(err => console.error(err));"
+    ],
+    "description": "Fetch GET request with basic logging",
+    "scope": "javascript,typescript"
+  },
+  "React Functional Component": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "const $1 = () => {",
+      "  return (",
+      "    <div>$0</div>",
+      "  );",
+      "};",
+      "",
+      "export default $1;"
+    ],
+    "description": "React functional component",
+    "scope": "javascript,typescript"
+  },
+  "Vue Composition API Setup": {
+    "prefix": "vue-sfc",
+    "body": [
+      "<script setup>",
+      "import { ref } from 'vue';",
+      "",
+      "const ${1:variable} = ref(null);",
+      "",
+      "$0",
+      "</script>"
+    ],
+    "description": "Vue 3 Composition API Setup",
+    "scope": "vue"
+  },
+  "TypeScript Interface": {
+    "prefix": "iface",
+    "body": ["interface $1 {", "  $0", "}"],
+    "description": "Create a TypeScript interface",
+    "scope": "typescript"
+  },
+  "TypeScript Function": {
+    "prefix": "tfunc",
+    "body": ["function $1($2: $3): $4 {", "  $0", "}"],
+    "description": "Function signature with typed params/return",
+    "scope": "typescript"
+  }
+}
